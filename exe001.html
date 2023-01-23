@@ -8,18 +8,19 @@
     <style>
         body {
             background-color: rgb(213, 213, 240);
-            color: brown;
+            color: brown; /* Comentário em CSS */
             font: normal 18pt Arial;
         }
     </style>
 </head>
 <body>
-    <h1>Hello, People! Isso é um Título</h1>
-    <p> Olá, Pessoas! Isso é um Paragrafo</p>
+    <h1>Hello, People!</h1> <!--Isso é um Título e um comentario em html-->
+    <p> Olá, Pessoas!</p> <!--Isso é um Paragrafo e um comentario em html-->
     <script>
         window.alert('Meu Primeiro Script!');
         window.confirm('Isso é um Alert em JavaScript');
-        window.prompt('Qual é o seu Nome?');
+        var nome = window.prompt('Qual é o seu Nome?'); // Vai Perguntar o Nome e isso é um comentario em JavaScript
+        window.alert('é um Grande Prazer Te Conhecer, ' + nome) //concatenação
     </script>
 </body>
 </html>

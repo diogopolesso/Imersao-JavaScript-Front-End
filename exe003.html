@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 01 - Primeiro Script</title>
+    <style>
+        body {
+            background-color: rgb(213, 213, 240);
+            color: brown;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, People!</h1>
+    <p> Olá, Pessoas!</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um Número:')); // Valor String convertinda em Number
+        var n2 = Number(window.prompt('Digite outro Número:')); // Valor String convertinda em Number
+        var soma = n1 + n2;
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`); // Placeholder
+    </script>
+</body>
+</html>
+
+<!--
+
+Lembrando que (number + number) para adição.
+(string + string) para concatenação.
+
+Conversão de uma String para um Numero:
+
+Number.parseInt(n) Converte para um numero Inteiro
+Number.parseFloat(n) Converte para um numero com Virgula
+
+Modo Simplificado:
+
+Number(n)
+
+Conversão de Numero para String:
+
+String(n)
+n.toString()
+
+Template String: placeholder
+
+${variavel}
+
+-->
