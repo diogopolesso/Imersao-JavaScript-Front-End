@@ -11,13 +11,26 @@
     <header>
       <h1>Verificados de Idade</h1>  
     </header>
-    <section>
-        <div>
-            Testando...
+    <section>        
+            <form>
+                <p>Ano de Nascimento:
+                    <input type="number" nome="txtano" id="txtano" min="0">
+                </p>
+            
+                <p>Sexo:                
+                    <label for="mas"><input type="radio" nome="radsex" id="mas" checked>Masculino</label>
+                    <label for="fem"><input type="radio" nome="radsex" id="fem">Feminino</label>
+                </p>
+                <p>
+                    <input type="button" value="Verificar" onclick="verificar()">
+                </p>
+            </form>        
+        <div id="res">
+            Preencha os campos acima para ver o resultado!
         </div>
     </section>
     <footer>
-        <p>&copy; Diogo Polesso</p>
+        <p>&copy; Copyright Diogo Polesso</p>
     </footer>
     <script src="script.js"></script>
 </body>
