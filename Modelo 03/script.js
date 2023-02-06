@@ -1,11 +1,13 @@
 function contar() {
-    let inicio = documentqueryselector('div#txti');
-    let fim = documentqueryselector('div#txtf');
-    let contar = documentqueryselector('div#txtp');
+    let inicio = document.getElementById('txti');
+    let fim = document.getElementById('txtf');
+    let contar = document.getElementById('txtp');
 
-    if (inicio.value.length == 0 || fim.value.length == 0 || PaymentResponse.value.length == 0) {
+    if (inicio.value.length == 0 || fim.value.length == 0 || contar.value.length == 0) {
         window.alert('[ERRO] Faltam Dados!')
     } else {
         alert('Tudo ok!')
     }
 }
+
+//document.querySelector
