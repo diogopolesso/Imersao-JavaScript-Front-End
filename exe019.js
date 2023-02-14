@@ -8,3 +8,4 @@ num.sort()    // pega todos os valores e coloca em ordem crescente (cuidar a ord
 console.log(num)
 console.log(`Nosso Vetor tem ${num.length} posições`)
 console.log(`O Primeiro valor do vetor é ${num[0]}`)
+
