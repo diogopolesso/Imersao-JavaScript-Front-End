@@ -1,1 +1,6 @@
+let num =
+
+function adcionar() {
+    
+}
 
