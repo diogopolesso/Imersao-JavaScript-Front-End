@@ -29,6 +29,10 @@ div {
     padding: 5px;
 }
 
+#flista {
+    width: 150px;
+    margin: 15px 320px 0px 0px;
+}
 
 footer {
     color: var(--cor-secundaria);
