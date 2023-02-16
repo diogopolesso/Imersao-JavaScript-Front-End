@@ -1,47 +1,48 @@
 function verificar() {
     let data = new Date();
     let ano = data.getFullYear();
-    let formularioAno = document.getElementsByName('txtano');
-    let res = document.querySelector('div#res');
+    let formularioAno = document.getElementById('txtano');
+    let res = document.getElementById('res');
 
-    if(formularioAno.Value.length == 0 || Number(formularioAno.value) > ano){
+    
+    if(formularioAno.value.length == 0 || Number(formularioAno.value) > ano){
         window.alert('[ERRO] Verifique os Dados e Tente Novamente!');
     } else {
-    let fsex = document.getElementsByName('radsex');
+    let fsex = document.getElementsByTagName('input');
     let idade = ano - Number(formularioAno.value);
     let genero = '';
     let img = document.createElement('img');
     img.setAttribute('id', 'foto');
 
-    if (document.getElementById('mas').checked) {
+    if (fsex[1].checked) {
         genero = 'Homem';
         if (idade >= 0 && idade < 10){
-            //Criança
+            genero = 'Criança';
             img.setAttribute('src', 'img/bebemenino.png');
         } else if (idade < 21){
-            //Jovem
+            genero = 'Jovem';
             img.setAttribute('src', 'img/homemjovem.png');
         } else if (idade < 50){
-            //Adulto
+            genero = 'Adulto';
             img.setAttribute('src', 'img/homemadulto.png');
-        }else {
-            //idoso
+        } else {
+            genero = 'idoso';
             img.setAttribute('src', 'img/homemidoso.png');
         }
 
-    } else if (document.getElementById('fem').checked){
+    } else if (fsex[2].checked){
         genero = 'Mulher';
         if (idade >= 0 && idade < 10){
-            //Criança
+            genero = 'Criança';
             img.setAttribute('src', 'img/bebemenina.png');
         } else if (idade < 21){
-            //Jovem
+            genero = 'Jovem';
             img.setAttribute('src', 'img/mulherjovem.png');
         } else if (idade < 50){
-            //Adulta
+            genero = 'Adulta';
             img.setAttribute('src', 'img/mulheradulta.png');
-        }else {
-            //idosa
+        } else {
+            genero = 'idosa';
             img.setAttribute('src', 'img/mulheridosa.png');
         }
     }
