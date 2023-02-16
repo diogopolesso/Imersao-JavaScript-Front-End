@@ -9,29 +9,26 @@
 </head>
     <body>
         <header>
-        <h1>Verificados de Idade</h1>  
+        <h1>Verificador de Idade</h1>  
         </header>
         <section>        
-                <form>
-                    <p>Ano de Nascimento:
-                        <input type="number" nome="txtano" id="txtano" min="0">
-                    </p>
-                
-                    <p>Sexo:                
-                        <label for="mas"><input type="radio" nome="radsex" id="mas" checked>Masculino</label>
-                        <label for="fem"><input type="radio" nome="radsex" id="fem">Feminino</label>
-                    </p>
-                    <p>
-                        <input type="button" value="Verificar" onclick="verificar()">
-                    </p>
-                </form>
+                <div>
+                    Ano de Nascimento:
+                    <input type="number" name="txtano" id="txtano" min="0">
+                    <br><br>Sexo:                
+                    <label for="mas"><input type="radio" name="radsex" id="mas">Masculino</label>
+                    <label for="fem"><input type="radio" name="radsex" id="fem" checked>Feminino</label>
+                    <br><br>
+                    <input type="button" value="verificar" onclick="verificar()">
+                    <br><br>Preencha os campos acima para ver o resultado!
+                </div><br>
             <div id="res">
-                Preencha os campos acima para ver o resultado!
+                
             </div>
         </section>
         <footer>
             <p>&copy; Copyright Diogo Polesso</p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+        </footer>  
+      <script src="script.js"></script>  
+    </body>    
 </html>
